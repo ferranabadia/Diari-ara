@@ -1,0 +1,359 @@
+@font-face {
+  font-family: ringsidebold;
+  src: url("/fonts/RingsideNarrowBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: ringsidebook;
+  src: url("/fonts/RingsideNarrowBook.ttf") format("truetype");
+}
+.ruler {
+  height: 2px;
+  background-color: #E2E8EE;
+  margin-top: 5px;
+}
+.ruler .form .mobile-form {
+  display: none;
+}
+.ruler .form .eleccions-form {
+  display: flex;
+}
+.ruler .form .eleccions-form .title-form {
+  background: #F4F6F8;
+  margin-top: 2px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.ruler .form .eleccions-form .title-form .title-text {
+  white-space: nowrap;
+  padding-top: 5px;
+  font-family: ringsidebold;
+  font-size: 20px;
+}
+.ruler .form .eleccions-form .candidate-info {
+  display: flex;
+  margin-top: 2px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.ruler .form .eleccions-form .candidate-info .candidate-img {
+  width: 70px;
+  height: 75px;
+}
+.ruler .form .eleccions-form .candidate-info .candidate-name {
+  color: #E3172D;
+  margin-top: 30px;
+  text-align: right;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 20px;
+  font-family: ringsidebold;
+}
+.ruler .form .eleccions-form .candidate-info .candidate2-name {
+  color: #1D6434;
+  margin-top: 30px;
+  width: 100%;
+  float: left;
+  padding-right: 45px;
+  font-size: 20px;
+  font-family: ringsidebold;
+}
+.ruler .form .eleccions-form .candidate-info .candidate2-img {
+  width: 70px;
+  height: 75px;
+}
+.ruler .form .eleccions-form .percentages {
+  display: flex;
+  margin-top: 2px;
+  width: 100%;
+}
+.ruler .form .eleccions-form .percentages .percentage1-form {
+  background-color: #E3172D;
+  display: flex;
+}
+.ruler .form .eleccions-form .percentages .percentage-text {
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  font-family: ringsidebold;
+  font-size: 20px;
+}
+.ruler .form .eleccions-form .percentages .percentage-line {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px dashed white;
+  position: relative;
+  left: 50%;
+}
+.ruler .form .eleccions-form .percentages .percentage2-form {
+  background-color: #1D6434;
+  display: flex;
+  flex-grow: 1;
+}
+.ruler .form .eleccions-form .escrutat-form {
+  background: #F4F6F8;
+  margin-top: 2px;
+  padding-top: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  white-space: nowrap;
+}
+.ruler .form .eleccions-form .escrutat-form .text-escrutat {
+  font-family: ringsidebook;
+  color: grey;
+  font-size: 20px;
+}
+
+.ruler-bottom {
+  height: 2px;
+  background-color: #E2E8EE;
+  margin-top: 75px;
+}
+
+@media (max-width: 774px) {
+  .title-form {
+    border-right: 2px solid #E2E8EE;
+    border-bottom: 2px solid #E2E8EE;
+  }
+  .title-form .title-text {
+    text-align: inherit !important;
+  }
+  .escrutat-form {
+    border-bottom: 2px solid #E2E8EE;
+  }
+  .escrutat-form .text-escrutat {
+    text-align: center;
+  }
+  .ruler-bottom {
+    display: none;
+  }
+  .mobile-form {
+    display: flex !important;
+  }
+  .candidate-info {
+    display: none !important;
+  }
+  .percentages {
+    display: none !important;
+  }
+  .candidate-info-mobile .candidate-name {
+    color: #E3172D;
+    font-family: ringsidebold;
+    font-size: 20px;
+  }
+  .candidate2-info-mobile .candidate2-name {
+    color: #1D6434;
+    font-family: ringsidebold;
+    font-size: 20px;
+    text-align: right;
+  }
+  .percentages-mobile {
+    display: flex;
+  }
+  .percentages-mobile .percentage1-form {
+    background-color: #E3172D;
+    display: flex;
+  }
+  .percentages-mobile .percentage-text {
+    padding-left: 16px;
+    color: white;
+    width: 100%;
+    padding-top: 5px;
+    font-family: ringsidebold;
+    font-size: 20px;
+  }
+  .percentages-mobile .percentage2-text {
+    padding-right: 16px;
+    color: white;
+    width: 100%;
+    padding-top: 5px;
+    font-family: ringsidebold;
+    font-size: 20px;
+    text-align: right;
+  }
+  .percentages-mobile .percentage-line {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px dashed white;
+    position: relative;
+    left: 50%;
+  }
+  .percentages-mobile .percentage2-form {
+    background-color: #1D6434;
+    display: flex;
+    flex-grow: 1;
+  }
+}
+@media (max-width: 774px) and (min-width: 500px) and (max-width: 774px) {
+  .escrutat-form {
+    width: 25% !important;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-1 {
+    width: 8.3333333333%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-3 {
+    width: 25%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-4 {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-5 {
+    width: 41.6666666667%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-6 {
+    width: 50%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-7 {
+    width: 58.3333333333%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-8 {
+    width: 66.6666666667%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-9 {
+    width: 75%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-10 {
+    width: 83.3333333333%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-11 {
+    width: 91.6666666667%;
+  }
+}
+@media (max-width: 774px) {
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 774px) and (min-width: 34em) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 774px) and (min-width: 48em) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 774px) and (min-width: 62em) {
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
